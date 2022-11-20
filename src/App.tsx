@@ -1,26 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { HashTable, linked, NameIDLookup } from './new'
 
-function App() {
+export default function App() {
+  const hash2 = NameIDLookup
+
+  console.log(linked)
+
+  const characters = [
+    {
+      id: 1,
+      name: 'rick'
+    },
+    {
+      id: 2,
+      name: 'morty'
+    },
+  ]
+  console.log(NameIDLookup(characters))
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <div>App</div>
+  )
 }
-
-export default App;
